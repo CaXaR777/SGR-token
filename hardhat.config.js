@@ -5,12 +5,12 @@ require("dotenv").config();
 module.exports = {
   solidity: "0.8.24",
   etherscan: {
-    apiKey: ETHSCAN_PRIVATE_KEY,
+    apiKey: process.env.ETHSCAN_PRIVATE_KEY,
   },
   networks: {
     sepolia: {
-      url: ALCHEMY_API_KEY_URL,
-      accounts: SEPOLIA_PRIVATE_KEY,
+      url: process.env.ALCHEMY_API_KEY_URL,
+      accounts: [process.env.SEPOLIA_PRIVATE_KEY],
     },
   },
 };
