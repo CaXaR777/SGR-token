@@ -11,7 +11,6 @@ describe("SolarGreen contract", function () {
   let addr2;
   let tokenCap = 100000000;
   //   let tokenCap = ethers.utils.parseUnits("100000000", 18);
-  let tokenSaleSupply = 50000000;
 
   beforeEach(async function () {
     // Get the ContractFactory and Signers here.
